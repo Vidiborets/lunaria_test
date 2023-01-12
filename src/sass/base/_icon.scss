@@ -1,0 +1,23 @@
+.icon {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1.48px;
+  padding: 30px 110px 30px 0px;
+  &:hover .yellow {
+    color: var(--text-color-blue);
+  }
+  &:hover .blue {
+    color: var(--text-color-yellow);
+  }
+}
+.icon .yellow {
+  color: var(--text-color-yellow);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon .blue {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text-color-blue);
+}
+.list__item__icon {
+  margin-bottom: 22px;
+}

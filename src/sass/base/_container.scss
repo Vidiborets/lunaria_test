@@ -1,0 +1,28 @@
+.container {
+  max-width: 1920px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin: 0 auto;
+}
+.line {
+  &::before {
+    content: '';
+    border: 1px solid var(--color-white);
+    width: 100%;
+    display: block;
+  }
+  &::after {
+    content: '';
+    border: 1px solid var(--color-white);
+    width: 100%;
+    display: block;
+  }
+}
+.line__before {
+  &::after {
+    content: '';
+    border: 1px solid var(--color-white);
+    width: 100%;
+    display: block;
+  }
+}

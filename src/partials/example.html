@@ -1,37 +1,167 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
-
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
-
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
-
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<header class="header">
+  <div class="container line">
+    <div class="header__content">
+      <a href="./index.html" class="icon">
+        <span class="icon__text yellow">Stand</span>
+        <span class="icon__text blue">with Ukraine</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="container">
+    <ul class="list hero__icon">
+      <li class="list__item__icon">
+        <a href="./index.html">
+          <svg class="site-nav__icon" width="300" height="26">
+            <use href="./images/icons.svg#icon-LUNARIA"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="./index.html">
+          <svg class="site-nav__icon" width="128" height="10">
+            <use href="./images/icons.svg#icon-copyrigth"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="hero">
+      <h1 class="title">
+        Lunaria is the leading IT <br />
+        integrator for taking your <br />
+        business to the next level
+      </h1>
+      <h2 class="title__text">
+        Drive profit with omnichannel IT <br />
+        transformation
+      </h2>
+      <div class="hero__box_title">
+        <p class="hero__title">What we DO:</p>
+        <ul class="list hero__list">
+          <li class="hero__item">
+            <a class="link hero__item_link" href="./index.html">portfolio</a>
+          </li>
+          <li class="hero__item">
+            <a class="link hero__item_link" href="./index.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="container line__before">
+    <div class="todo__box">
+      <ul class="list todo__list">
+        <li class="todo__list_item">
+          <p class="todo__text_number">01</p>
+          <h2 class="todo__title_text">Design & UX</h2>
+          <p class="todo__text">
+            Development of a detailed roadmap to create or enhance your brand or
+            digital product experience
+          </p>
+        </li>
+        <li class="todo__list_item">
+          <p class="todo__text_number">02</p>
+          <h2 class="todo__title_text">Development and integration</h2>
+          <p class="todo__text">
+            Development, support, and scaling of high-traffic and high-load IT
+            projects. Development of core website functionality, data storage
+            and processing systems, data platforms, and buses.
+            Back-end-developmentBack-end-development.
+          </p>
+        </li>
+        <li class="todo__list_item">
+          <p class="todo__text_number">03</p>
+          <h2 class="todo__title_text">
+            Business and <br />
+            systems analytics
+          </h2>
+          <p class="todo__text">
+            Transformation of business development goals into an approved list
+            of tasks for the implementation, customization, or integration of
+            third-party or in-house IT solutions.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="container line__before">
+    <div class="option">
+      <ul class="main-carousel list">
+        <li class="carousel-cell option__list_item">
+          <a class="link option__item__link">
+            <span class="option__item_button">+</span>
+            <p class="option__item_text">Quality</p>
+          </a>
+        </li>
+        <li class="carousel-cell option__list_item">
+          <a class="link option__item__link">
+            <span class="option__item_button">+</span>
+            <p class="option__item_text">Guaranty</p>
+          </a>
+        </li>
+        <li class="carousel-cell option__list_item">
+          <a class="link option__item__link">
+            <span class="option__item_button">+</span>
+            <p class="option__item_text item__width">
+              transparency <br />
+              of cooperation
+            </p>
+          </a>
+        </li>
+        <li class="carousel-cell option__list_item">
+          <a class="link option__item__link">
+            <span class="option__item_button">+</span>
+            <p class="option__item_text">confidentiality</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="container line__before">
+    <div class="about">
+      <div>
+        <h2 class="about__title">About US</h2>
+        <div>
+          <p>
+            We operate with over 20 employees in more than 5 countries in a
+            number of key disciplines such as sales & marketing, research &
+            development, operations & supply chain, information technology,
+            finance and human resources.
+          </p>
+          <span>
+            <a href="./">MORE ABOUT US</a>
+            <a href="">
+              <svg class="site-nav__icon" width="14" height="33">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <ul class="list">
+          <li>
+            <img src="" alt="" />
+            <span>
+              <h3>Vanessa Kanu</h3>
+              <p>Creative Design Derector</p>
+            </span>
+          </li>
+          <li>
+            <img src="" alt="" />
+            <span>
+              <h3>Jeff Puritt</h3>
+              <p>Chief Legal Officer</p>
+            </span>
+          </li>
+          <li>
+            <img src="" alt="" />
+            <span>
+              <h3>Michael Ringman</h3>
+              <p>Creative Design Derector</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
